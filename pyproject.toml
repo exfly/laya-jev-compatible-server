@@ -1,0 +1,25 @@
+[project]
+name = "layalib"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "exfly", email = "exflyg@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=1.32.0",
+    "numpy>=2.5.3",
+    "pytest>=9.1.1",
+    "safetensors>=0.8.0",
+    "torch>=2.14.0",
+    "transformers>=5.17.0",
+    "typesafe-sdk>=0.7.0",
+]
+
+[project.scripts]
+layalib = "layalib:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
